@@ -76,9 +76,9 @@
     SCB_INTERVAL = 30
     ```
 
+> [!NOTE]
+> 環境変数でも可能
+
 6. `pipenv install -r requirements.txt`
 
 7. `pipenv run python3 ./discordbot.py`
-
-> [!NOTE]
-> 環境変数でも可能
