@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  status_check:
+    image: "ghcr.io/ryo-icy/status-check-bot:latest"
+    # build: ./app
+    container_name: status_check
+    restart: always
+    environment:
+      SCB_WEBHOOK: ${WEBHOOK}
+      SCB_MESSAGE_ID: ${MESSAGE_ID}
+      SCB_INTERVAL: 30
+    volumes:
+      - ./app/script/config.yaml:/script/config.yaml:ro
