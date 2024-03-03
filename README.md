@@ -4,7 +4,7 @@
 ## イメージ
 ![](./doc/img/post_image.png)
 
-## Dockerコンテナで実行する。
+## Dockerコンテナで実行する
 1. DiscordのWebhookを取得する。
 
 > [!NOTE]
@@ -55,7 +55,7 @@
 5. `docker compose up -d`
 
 
-## Python実行
+## Pythoで実行する
 1. DiscordのWebhookを取得する。
 
 2. `git clone https://github.com/ryo-icy/port-status-check-bot.git`
