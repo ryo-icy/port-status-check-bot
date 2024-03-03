@@ -31,6 +31,8 @@
         host: 192.168.1.222
         port: 30100
         protocol: UDP
+    
+    bottitle: <Bot Title>
     ```
 
 4. `docker-compose.yaml`の項目を自分の環境に合わせる。
@@ -67,6 +69,8 @@
         host: <IP or FQDN>
         port: <Port>
         protocol: <TCP or UDP>
+    
+    bottitle: <Bot Title>
     ```
 
 5. `local_setting.py`を作成

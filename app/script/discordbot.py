@@ -31,7 +31,6 @@ class PortCheck:
         self.config_yaml = config
     
     def _portcheck(self, config):
-        queue = []
         if config['protocol'] == 'TCP':
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             result = sock.connect_ex((socket.gethostbyname(config['host']), config['port']))
@@ -63,7 +62,7 @@ class PortCheck:
         mes = {
             "embeds": [
                 {
-                    "title": 'Minecraft Server Status Check',
+                    "title": self.config_yaml['bottitle'],
                     "color": 65280,
                     "footer": {
                         "text": f"last check: {self._get_now_time()}"
